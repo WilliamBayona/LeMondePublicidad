@@ -7,12 +7,12 @@ import './Contact.css';
 // 2. Add Service → Gmail → copia el Service ID
 // 3. Email Templates → crea plantilla → copia el Template ID
 // 4. Account → API Keys → copia la Public Key
-const EMAILJS_SERVICE_ID  = 'TU_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'TU_TEMPLATE_ID';
-const EMAILJS_PUBLIC_KEY  = 'TU_PUBLIC_KEY';
+const EMAILJS_SERVICE_ID  = 'service_xgfpveu';
+const EMAILJS_TEMPLATE_ID = 'template_7tmp6d2';
+const EMAILJS_PUBLIC_KEY  = '1x_IhqieTC6JDVNgz';
 // ─────────────────────────────────────────────────────────────────
 
-const INITIAL = { nombre: '', empresa: '', email: '', telefono: '', mensaje: '' };
+const INITIAL = { name: '', empresa: '', email: '', telefono: '', message: '' };
 
 export default function Contact() {
   const formRef = useRef(null);
@@ -127,8 +127,8 @@ export default function Contact() {
 
               <div className="form-row">
                 <div className="form-group">
-                  <label htmlFor="nombre">Nombre *</label>
-                  <input id="nombre" name="nombre" type="text" required value={form.nombre} onChange={handleChange} placeholder="Tu nombre" />
+                  <label htmlFor="name">Nombre *</label>
+                  <input id="name" name="name" type="text" required value={form.name} onChange={handleChange} placeholder="Tu nombre" />
                 </div>
                 <div className="form-group">
                   <label htmlFor="empresa">Empresa</label>
@@ -146,8 +146,8 @@ export default function Contact() {
                 </div>
               </div>
               <div className="form-group">
-                <label htmlFor="mensaje">Mensaje *</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required value={form.mensaje} onChange={handleChange} placeholder="Cuéntanos qué tipo de empaque necesitas, cantidades, etc." />
+                <label htmlFor="message">Mensaje *</label>
+                <textarea id="message" name="message" rows="5" required value={form.message} onChange={handleChange} placeholder="Cuéntanos qué tipo de empaque necesitas, cantidades, etc." />
               </div>
               <button
                 type="submit"
